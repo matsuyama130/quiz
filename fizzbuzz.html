@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h1>FizzBuzz問題</h1>
+
+  <div id="result"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+    // まずはconsoleに表示してみよう！
+
+    // 「1 から 100 の数値」を console に出力する．
+
+    let option = "";
+    for (let i = 0; i < 100; i++) {
+      console.log(option);
+    }
+    $('#result').html(option);
+
+
+
+
+
+
+
+    // 「3 の倍数の場合」に「Fizz」を出力する．
+    for (let i = 1; i <= 100; i++) {
+      if (i % 3 == 0) {
+        a = 'Fizz'
+      }
+
+      // 「5 の倍数の場合」に「Buzz」を出力する．
+      else if (i % 5 == 0) {
+        a = 'Buzz'
+      }
+      // 「3 の倍数かつ 5 の倍数の場合」に「FizzBuzz」を出力する．
+      else if (i % 15 == 0) {
+        a = 'Fizz Buzz'
+      } else {
+        a = i
+      };
+
+      // 処理結果を画面に表示する処理をつくる．
+      {
+        option += `${i}回目<br>`;
+      }
+      {
+        $('#result').html(option);
+      };
+
+    }
+  </script>
+
+</body>
+
+</html>
