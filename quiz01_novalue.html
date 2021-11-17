@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
+
 <body>
   <h1>Quiz初級編</h1>
 
@@ -26,6 +27,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   <script>
+
 
     const quiz = {
       question: 'プログラミングにおいて次の3つの中で最も重要なものはなにか．',
@@ -46,7 +48,6 @@
     $("#answer01").val(1);
     $("#answer02").val(2);
 
-
     $("button").on("click", function (e) {
       // 1, 2 `value`を受け取り，条件分岐
       if (Number(e.target.value) === quiz.correct) {
@@ -57,6 +58,9 @@
         $("#result").text("不正解．．．");
       }
     });
+
+
+
 
   </script>
 </body>
